@@ -1,0 +1,10 @@
+List<String> questions = [
+    'Have you ever wrote a letter?',
+    'Have you ever smoked a cigarette?',
+    'Have you ever been hit on by someone who was too old?',
+    'Have you ever been on the radio or on television?',
+    'Have you ever stayed awake for an entire night?',
+    'Have you ever broken something, like a window, and ran away?',
+    'Have you ever won a contest and received a prize?',
+    'Have you ever met a famous person or a celebrity?',
+  ];
