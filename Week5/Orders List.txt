@@ -1,9 +1,9 @@
 final ordersList = List.generate(12, (index) {
       return Order(
-        index,
-        deliveryMen[Random().nextInt(3)],
-        Random().nextDouble() * 500,
-        DateTime.now().subtract(
+        id: index,
+        deliveryMan: deliveryMen[Random().nextInt(3)],
+        price: Random().nextDouble() * 500,
+        orderDate: DateTime.now().subtract(
           Duration(
             days: Random().nextInt(12),
             hours: Random().nextInt(24),
@@ -14,10 +14,10 @@ final ordersList = List.generate(12, (index) {
     });
 
     ordersList.forEach((element) {
-      final key = DateFormatter.yyMMDD(element.orderDate);
+      final key = DateFormat('yyyyMMdd').format(element.orderDate);
       if (!orders.containsKey(key)) {
         orders[key] = Map<String, dynamic>();
-        orders[key]['date'] = DateFormatter.wdDMY(element.orderDate);
+        orders[key]['date'] = DateFormat('EEEE, dd/MM/yyyy').format(element.orderDate);
         orders[key]['list'] = List<Order>();
       }
       orders[key]['list'].add(element);
