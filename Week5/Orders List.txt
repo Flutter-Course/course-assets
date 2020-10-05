@@ -1,0 +1,24 @@
+final ordersList = List.generate(12, (index) {
+      return Order(
+        index,
+        deliveryMen[Random().nextInt(3)],
+        Random().nextDouble() * 500,
+        DateTime.now().subtract(
+          Duration(
+            days: Random().nextInt(12),
+            hours: Random().nextInt(24),
+            minutes: Random().nextInt(60),
+          ),
+        ),
+      );
+    });
+
+    ordersList.forEach((element) {
+      final key = DateFormatter.yyMMDD(element.orderDate);
+      if (!orders.containsKey(key)) {
+        orders[key] = Map<String, dynamic>();
+        orders[key]['date'] = DateFormatter.wdDMY(element.orderDate);
+        orders[key]['list'] = List<Order>();
+      }
+      orders[key]['list'].add(element);
+    });
