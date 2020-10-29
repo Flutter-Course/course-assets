@@ -10,11 +10,8 @@ class ListBox extends StatefulWidget {
 
 class _ListBoxState extends State<ListBox> {
   List colors = [
-    Colors.red,
-    Colors.green,
-    Colors.yellow,
-    Colors.black,
-    Colors.blue
+    Colors.orange,
+    Colors.blue,
   ];
   Random random = Random();
   Color color;

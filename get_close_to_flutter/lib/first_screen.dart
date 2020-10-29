@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
+class FirstScreen extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _FirstScreenState createState() => _FirstScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _FirstScreenState extends State<FirstScreen> {
   bool showFirst = true;
   Widget firstTree() {
     return Row(
