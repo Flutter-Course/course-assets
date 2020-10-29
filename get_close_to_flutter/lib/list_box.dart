@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ListBox extends StatefulWidget {
-  //ListBox(key) : super(key: key);
   @override
   _ListBoxState createState() => _ListBoxState();
 }
