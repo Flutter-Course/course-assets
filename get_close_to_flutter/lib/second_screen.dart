@@ -11,7 +11,7 @@ class _SecondScreenState extends State<SecondScreen> {
   @override
   void initState() {
     super.initState();
-    boxes = List.generate(2, (index) => ListBox());
+    boxes = List.generate(2, (index) => ListBox(UniqueKey()));
   }
 
   @override

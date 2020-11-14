@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ListBox extends StatefulWidget {
+  ListBox(key) : super(key: key);
   @override
   _ListBoxState createState() => _ListBoxState();
 }
@@ -17,7 +18,7 @@ class _ListBoxState extends State<ListBox> {
   @override
   void initState() {
     super.initState();
-    color = colors[random.nextInt(5)];
+    color = colors[random.nextInt(2)];
   }
 
   @override

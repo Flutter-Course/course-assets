@@ -23,7 +23,7 @@ class _FirstScreenState extends State<FirstScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text('Hello Dart'),
-        SizedBox(width: 10), //Padding(padding: EdgeInsets.only(right: 10)),
+        Padding(padding: EdgeInsets.only(right: 10)),
         Image.asset('assets/images/dart.png', height: 40),
       ],
     );
